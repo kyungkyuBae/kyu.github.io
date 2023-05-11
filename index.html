@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kyu`s Portfolio</title>
+    <meta name="description" content="kyu`s Portfolio">
+    <meta name="author" content="kyu">
+    <link rel="icon" type="image/png"href="./imgs/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/28bd22dfd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <nav class="nav">
+        <div class="nav__logo">
+            <img src="./imgs/favicon.png" alt="" class="icon">
+            <a href="#" class="nav__logo__link">kyu</a>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__list__item active" data-link="home">Home</li>
+            <li class="nav__list__item" data-link="about">About</li>
+            <li class="nav__list__item" data-link="skills">Skill</li>
+            <li class="nav__list__item" data-link="my-work">My work</li>
+            <li class="nav__list__item" data-link="testimonials">Testimonial</li>
+            <li class="nav__list__item" data-link="footer">Contact</li>
+        </ul>
+        <button class="nav__hamburgers">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+    <!-- home -->
+    <section class="home">
+        <section class="home__main">
+            <img src="./imgs/profile.jpg" type="image/jpg" alt="kyu`s profile" class="home__image">
+            <h1 class="home__title">Hello,<br/> I'm Gyung Kyu</h1>
+            <p class="home__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eos.</p>
+            <button class="button" type="button" >COTACT ME</button>
+        </section>
+        
+    </section>
+    <!-- aboutMe -->
+    <section class="about">
+        <h1 class="about__title">About me</h1>
+        <p class="about__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae blanditiis dolore. Iure, molestiae? Maiores accusamus fugit quaerat ipsam aliquid non eveniet ullam autem ad perferendis. Doloribus laboriosam sequi distinctio!
+        </p>
+        <div class="about__images">
+            <article class="about__image">
+                <img src="./imgs/html5.svg" alt="html photo" class="image__photo">
+                <h1 class="image__title">HTML</h1>
+            </article>
+            <article class="about__image">
+                <img src="./imgs/css3-alt.svg" alt="css photo" class="image__photo">
+                <h1 class="image__title">CSS</h1>
+            </article>
+            <article class="about__image">
+                <img src="./imgs/js.svg" alt="Javascript photo" class="image__photo">
+                <h1 class="image__title">Javascript</h1>
+            </article>
+        </div>
+        <footer class="about__footer"></footer>
+    </section>
+    <!-- skills -->
+    <section class="skills">
+        <h1 class="skills__title">Skills</h1>
+        <article class="skillsets">
+            <h1 class="skillsets__title">skills</h1>
+            <div class="skill">
+                <div class="skill__desc">
+                    <span class="skill__title">HTML</span>
+                    <span class="skill__percent">80%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__bar--active" style="width:80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill__desc">
+                    <span class="skill__title">CSS</span>
+                    <span class="skill__percent">70%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__bar--active"style="width:70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill__desc">
+                    <span class="skill__title">Javascript</span>
+                    <span class="skill__percent">60%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__bar--active"style="width:60%;"></div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- myWork -->
+    <section class="my-work">
+        <h1 class="my-work__title">My work</h1>
+        <p class="my-work__desc">Projects</p>
+        <div class="my-work__menu">
+            <button class="my-work__button active" -data-visitopton="all" >
+                All
+                <span class="menu__count">8</span>
+            </button>
+            <button class="my-work__button" -data-visitopton="front-end">
+                Front-end
+                <span class="menu__count">3</span>
+            </button>
+            <button class="my-work__button"-data-visitopton="back-end">
+                Back-end
+                <span class="menu__count">3</span>
+            </button>
+            <button class="my-work__button"-data-visitopton="mobile">
+                Mobile
+                <span class="menu__count">2</span>
+            </button>
+        </div>
+        <div class="my-work__projects">
+            <a href="#" target="_blank" class="project" -data-visible="front-end">
+                <img src="./imgs/projects/project1.png" alt="project image" class="project__image">
+            </a>
+            <a href="#" target="_blank" class="project" -data-visible="front-end">
+                <img src="./imgs/projects/project2.png"  alt="project image" class="project__image">
+            </a> 
+            <a href="#" target="_blank" class="project" -data-visible="front-end">
+                <img src="./imgs/projects/project3.png" alt="project image" class="project__image">
+            </a>
+            <a href="#" target="_blank" class="project" -data-visible="back-end">
+                <img src="./imgs/projects/project4.png" alt="project image" class="project__image">
+            </a>
+            <a href="#" target="_blank" class="project" -data-visible="back-end">
+                <img src="./imgs/projects/project5.png" alt="project image" class="project__image">
+            </a>
+            <a href="#" target="_blank" class="project" -data-visible="back-end">
+                <img src="./imgs/projects/project6.png" alt="project image" class="project__image">
+            </a>
+            <a href="#" target="_blank" class="project" -data-visible="mobile">
+                <img src="./imgs/projects/project7.png" alt="project image" class="project__image">
+            </a>
+            <a href="#" target="_blank" class="project" -data-visible="mobile">
+                <img src="./imgs/projects/project8.png" alt="project image" class="project__image">
+            </a>
+        </div>
+    </section>
+    <!-- testimonials -->
+    <section class="testimonials">
+        <h1 class="testimonials__title">
+            Testimonials
+        </h1>
+        <p class="testimonials__desc">
+            see what they say about me
+        </p>
+        <div class="testimonial">
+            <img src="./imgs/people1.jpg" alt="testimonials face" class="testimonial__face-image">
+            <div class="testimonial__content">
+                <h1 class="testimonial__desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, necessitatibus similique aliquam vitae nemo est facere qui dolores provident veniam?
+                </h1>
+                <p class="testimonial__to-from"><span>kyu</span> / TigerSpike</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="./imgs/people1.jpg" alt="testimonials face" class="testimonial__face-image">
+            <div class="testimonial__content">
+                <h1 class="testimonial__desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod aut eaque repudiandae, ipsa tenetur reprehenderit laborum dignissimos suscipit possimus placeat modi delectus consequuntur temporibus optio laudantium necessitatibus soluta rem deserunt.
+                </h1>
+                <p class="testimonial__to-from"><span>kyu</span> / TigerSpike</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <h1 class="footer__title">Let`s talk</h1>
+        <h1 class="footer__email">qorudrb14@naver.com</h1>
+        <div class="footer__link">
+            <a href="" class="link__github"><i class="fa-brands fa-github"></i></a>
+            <a href="" class="link__linkin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="footer__desc">2020 Dream Coding kyu - All rights reserved</p>
+    </footer>
+    <div class="Etc">
+        <button class="arrowBtn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+</body>
+</html>

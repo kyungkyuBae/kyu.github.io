@@ -1,0 +1,520 @@
+/* reset global */
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing:border-box;
+    cursor: default;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+ul,ol,dl,li{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+button , input , textaria {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+}
+
+.about {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* home */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imgs/bgc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.home__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1000ms ease;
+}
+.home__image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 2px solid #fff;
+}
+
+.home__title {
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+
+}
+
+.home__desc{
+    color: #fff;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.button {
+    border: 3px solid white;
+    border-radius: 4px;
+    padding: 3px 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+/*                  nav */
+
+.nav {
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    transition: bgc 3000ms ease;
+    z-index: 2;
+    transition: all 500ms ease;
+}
+
+
+.nav.nav--scroll,
+.nav.active{
+    background-color: rgb(231,159,249);
+
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+   
+    
+
+}
+.nav__logo__icon {
+    width: 100%;
+    height: ;
+
+}
+
+.nav__logo__link {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    color: #fff;
+}
+.nav__list__item{
+    padding: 8px 12px;
+    cursor: pointer;
+    border:1px solid transparent;
+    border-radius: 4px;
+}
+.nav__list__item:hover{
+    border-color: white;
+    background-color: pink;
+}
+.nav__list__item.active{
+    border-color: white;
+}
+
+.nav__hamburgers {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top : 15px;
+    right: 15px;
+    font-size: 25px;
+    color: #fff;
+    display: none;
+}
+/* about me  */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+
+}
+
+.about__title {
+    font-weight 700;
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.about__desc {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 150px;
+    max-width: 1000px;
+}
+
+.about__images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+
+.about__image{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+
+
+.image__photo {
+    width : 170px;
+    height: 170px;
+    border: 1px solid black; 
+    color: black;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition-property: transform;
+    transition-duration: 250ms;
+
+}
+
+.image__photo:hover{
+    transform: rotate(45deg);
+}
+
+.image__title{
+    font-size: 30px;
+}
+
+/* Skill 부분 */
+.skills{
+    background-color: rgb(255,246,208);
+    padding: 80px 50px;
+}
+
+.skills__title {
+    font-weight: 700;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.skillsets {
+    background-color: rgb(68, 68, 68);
+    color: #fff;
+    height: 500px;
+    padding: 30px;
+}
+
+.skillsets__title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.skill{
+    margin-bottom: 80px;
+}
+.skill__desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill__bar{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 4px;
+}
+
+.skill__bar--active {
+    height: 3px;
+    background-color: rgb(239,173,84);
+    border-radius: 4px;
+}
+
+/* my-work 부분 */
+
+.my-work{
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.my-work__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.my-work__desc {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.my-work__menu {
+    margin-bottom: 40px;
+}
+
+.menu__count{
+  border : 1px solid orange;
+  border-radius: 50%;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-color: orange;
+  opacity: 0;
+}
+
+
+
+.my-work__button.active .menu__count,
+.my-work__button:hover .menu__count {
+    opacity : 1;
+}
+
+
+
+.my-work__button {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px 48px;
+}
+
+.my-work__button.active,
+.my-work__button:hover {
+    background-color: rgb(237,140,134);
+    color: #fff;
+}
+
+.my-work__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project__image{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.project{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(235,235,235);
+    margin: 0px 3px 3px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease;
+    
+}
+
+.project.active{
+    width:250px;
+    height: 250px;
+}
+
+.project.inactive{
+    width:0;
+    height: 0;
+}
+/* testimonials 부분 */
+
+.testimonials {
+    text-align: center;
+    background-color: rgb(235,235,235);
+    padding: 80px 50px;
+}
+
+.testimonials__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.testimonials__desc {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.testimonial__face-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.testimonial {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.testimonial__content{
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.testimonial__desc{
+    font-weight: 600;
+    color: rgb(140,140,140);
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+}
+
+.testimonial__to-from {
+    text-align: center;
+    bottom: 10%;
+    left:50%;
+}
+.testimonial__to-from{
+    color: rgb(140,140,140);
+    font-weight: 600;
+}
+
+.testimonial__to-from span{
+    color: rgb(240,158,153);
+}
+
+.footer{
+    background-color: rgb(231,166,249);
+    text-align: center;
+    padding: 80px 0px 30px;
+    color: #fff;
+}
+
+.footer__title ,.footer__email {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.fa-brands{
+    display: inline-block;
+    font-size: 100px;
+    margin: 20px;
+}
+.arrowBtn {
+    width:50px;
+    height: 50px;
+    background-color: rgb(231,166,249);
+    border-radius: 50%;
+    font-size: 30px;
+    position: fixed;
+    bottom : 40px;
+    right: 40px;
+    border: none;
+    color : #fff;
+    opacity: 0;
+    transition: all 250ms ease;
+    pointer-events: none;
+}
+.arrowBtn.off{
+    opacity:1;
+    pointer-events: all;
+}
+.arrowBtn.off.color{
+    background-color: black;
+}
+
+
+
+@media screen and (max-width:768px){
+    .home__desc{
+        text-align: center;
+    }
+
+    .nav__hamburgers{
+        display: block;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    
+    .nav__list.active {
+        display:flex;
+    }
+    .nav__logo{
+        display: block;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    /* about 부분 */
+    .about__images {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__desc{
+        margin-bottom: 30px;
+    }
+    
+    .project {
+        margin-right : 0;
+    }
+
+    .testimonial {
+        flex-direction: column;
+    }
+    .testimonial__face-image{
+        width: 80px;
+        height: 80px;
+        margin-bottom : 10px;
+    }
+    .footer__email {
+        font-size: 20px;
+    }
+    .my-wrork__menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .my-work__button{
+        width: 140px;
+        padding: 0;
+    }
+}
